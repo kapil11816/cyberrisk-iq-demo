@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="CyberRisk IQ private demo preview. Use synthetic data only.">
+<script>window.CYBERRISK_IQ_DEMO_MODE = true;</script>
+
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CyberRisk IQ | Cyber Risk Intelligence</title>
+<style>
+:root{--bg:#f5f7fb;--panel:#fff;--ink:#172033;--muted:#657089;--line:#e4e8f0;--nav:#111b31;--blue:#4263eb;--blue2:#eaf0ff;--teal:#087f8c;--amber:#a65d03;--red:#bd3434;--green:#18794e;--shadow:0 8px 28px rgba(20,35,70,.06)}*{box-sizing:border-box}body{margin:0;background:var(--bg);font:14px/1.45 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Arial;color:var(--ink)}button,input,select{font:inherit}button{cursor:pointer}.app{min-height:100vh;display:grid;grid-template-columns:245px 1fr}.sidebar{background:var(--nav);color:#dbe3f4;padding:24px 15px;display:flex;flex-direction:column;gap:24px}.brand{display:flex;gap:11px;align-items:center;padding:0 10px}.brandmark{width:38px;height:38px;border-radius:12px;background:#4868ef;display:grid;place-items:center;color:#fff;font-weight:800;font-size:17px}.brand strong{display:block;color:#fff;font-size:16px;letter-spacing:.2px}.brand small{color:#9aa8c6;font-size:11px}.navlabel{font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:#8492b0;padding:0 12px;margin-bottom:7px}.nav button{width:100%;text-align:left;color:#bac6de;background:transparent;border:0;border-radius:9px;padding:11px 12px;margin:2px 0;display:flex;gap:10px;align-items:center}.nav button.active,.nav button:hover{background:#263653;color:#fff}.nav .ico{width:20px;text-align:center}.sidebarfoot{margin-top:auto;border-top:1px solid #293750;padding:16px 10px;color:#9aa8c6;font-size:11px}.main{min-width:0}.topbar{height:70px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 32px;gap:12px}.crumb{font-size:12px;color:var(--muted)}.crumb b{color:var(--ink)}.topright{display:flex;align-items:center;gap:12px}.pill{border:1px solid var(--line);padding:7px 10px;border-radius:20px;font-size:11px;color:#526078;background:#fff}.avatar{width:33px;height:33px;background:#e9edff;color:#344fc1;border-radius:50%;display:grid;place-items:center;font-weight:700}.content{padding:28px 32px 45px;max-width:1500px;margin:auto}.heading{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;margin-bottom:22px}.eyebrow{font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:var(--blue);font-weight:800}.h1{font-size:27px;line-height:1.2;letter-spacing:-.7px;margin:5px 0 7px}.sub{color:var(--muted);max-width:750px}.actions{display:flex;gap:9px;flex-wrap:wrap}.btn{border:1px solid var(--line);background:#fff;border-radius:9px;padding:10px 14px;color:#33415b;font-weight:650}.btn.primary{background:var(--blue);border-color:var(--blue);color:#fff}.btn:hover{filter:brightness(.98)}.notice{display:flex;gap:11px;padding:12px 14px;border:1px solid #f0d7a4;background:#fffaf0;color:#73501d;border-radius:10px;margin-bottom:19px;font-size:12px}.grid{display:grid;gap:16px}.metrics{grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:18px;min-width:0}.metric-top{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:12px}.metric-icon{width:32px;height:32px;border-radius:9px;background:#eef1ff;color:var(--blue);display:grid;place-items:center}.metric-value{font-size:26px;font-weight:780;letter-spacing:-.7px;margin:12px 0 4px}.metric-foot{font-size:11px;color:var(--muted)}.layout{grid-template-columns:minmax(0,1.55fr) minmax(300px,1fr)}.cardtitle{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:16px}.cardtitle h2{font-size:15px;margin:0 0 4px}.cardtitle p{font-size:11px;color:var(--muted);margin:0}.tag{display:inline-flex;padding:4px 8px;border-radius:20px;font-size:10px;font-weight:750;white-space:nowrap}.tag.blue{background:#edf1ff;color:#3d56c5}.tag.green{background:#e6f7ef;color:var(--green)}.tag.amber{background:#fff2dc;color:var(--amber)}.tag.red{background:#fdeaea;color:var(--red)}.barrow{margin:15px 0}.barlabel{display:flex;justify-content:space-between;gap:10px;font-size:12px;margin-bottom:7px}.barlabel span:last-child{font-weight:700}.bar{height:8px;background:#edf0f6;border-radius:10px;overflow:hidden}.fill{height:100%;border-radius:10px;background:var(--blue)}.fill.red{background:#db5a5a}.fill.amber{background:#e4a23b}.fill.teal{background:#16a1a6}.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:10px;color:var(--muted);margin-top:16px}.dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:5px}.scenarios{width:100%;border-collapse:collapse;font-size:12px}.scenarios th{text-align:left;color:var(--muted);font-size:10px;font-weight:650;padding:10px 7px;border-bottom:1px solid var(--line)}.scenarios td{padding:12px 7px;border-bottom:1px solid #eef1f6}.scenarios tr:last-child td{border-bottom:0}.scenarios td:last-child,.scenarios th:last-child{text-align:right}.scenname{font-weight:700}.muted{color:var(--muted);font-size:10px;display:block;margin-top:2px}.lower{grid-template-columns:minmax(0,1.3fr) minmax(280px,1fr);margin-top:16px}.coveragebox{background:linear-gradient(135deg,#f1f4ff,#fff);border:1px solid #dfe6ff;border-radius:12px;padding:16px;margin-top:8px}.coverrow{display:flex;justify-content:space-between;gap:12px;margin:8px 0;font-size:12px}.coverrow strong{font-size:13px}.gapnum{font-size:24px;font-weight:800;color:#b64242}.smallprint{font-size:10px;color:var(--muted);line-height:1.5}.risklist{display:flex;flex-direction:column;gap:13px}.riskitem{display:flex;gap:11px;align-items:flex-start}.riskbullet{width:30px;height:30px;border-radius:9px;background:#fff0e6;color:#b45d17;display:grid;place-items:center;flex-shrink:0}.riskitem strong{font-size:12px;display:block}.riskitem span{font-size:11px;color:var(--muted)}.view{display:none}.view.active{display:block}.formgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.field label{display:block;font-size:12px;font-weight:700;margin-bottom:6px}.field input,.field select{width:100%;border:1px solid #dce2ec;background:#fff;border-radius:9px;padding:11px;color:var(--ink);outline:none}.field input:focus,.field select:focus{border-color:#7c91f5;box-shadow:0 0 0 3px #eaf0ff}.field small{display:block;color:var(--muted);font-size:10px;margin-top:5px}.formsection{font-size:13px;font-weight:800;margin:20px 0 12px;padding-bottom:9px;border-bottom:1px solid var(--line)}.checkgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.check{border:1px solid var(--line);border-radius:9px;padding:11px;display:flex;gap:9px;align-items:flex-start;font-size:12px}.check input{margin-top:3px;accent-color:var(--blue)}.check span{display:block;color:var(--muted);font-size:10px;margin-top:3px}.resultgrid{grid-template-columns:repeat(3,minmax(0,1fr));margin:16px 0}.resultbox{padding:15px;border:1px solid var(--line);border-radius:11px}.resultbox span{font-size:11px;color:var(--muted)}.resultbox strong{display:block;font-size:22px;margin-top:7px}.chartwrap{height:230px;display:flex;align-items:flex-end;gap:18px;padding:16px 8px 0;border-bottom:1px solid var(--line)}.chartcol{flex:1;display:flex;align-items:center;justify-content:flex-end;flex-direction:column;height:100%;gap:8px}.chartbar{width:min(54px,70%);background:#6d83ef;border-radius:7px 7px 0 0;min-height:4px;position:relative}.chartbar span{position:absolute;top:-20px;left:50%;transform:translateX(-50%);font-size:10px;font-weight:700;white-space:nowrap}.chartlabel{font-size:10px;color:var(--muted);text-align:center;height:28px}.integration{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:center;margin:18px 0}.intbox{border:1px solid var(--line);border-radius:12px;padding:16px;text-align:center;background:#fff}.intbox strong{display:block;margin:7px 0 3px}.intbox small{color:var(--muted);font-size:11px}.intarrow{color:var(--blue);font-size:22px}.code{font:11px ui-monospace,SFMono-Regular,Consolas,monospace;background:#101a2d;color:#dce7ff;border-radius:10px;padding:15px;overflow:auto;white-space:pre}.footnote{font-size:10px;color:var(--muted);margin-top:13px}.toast{position:fixed;bottom:22px;right:22px;background:#16233a;color:#fff;padding:13px 17px;border-radius:10px;box-shadow:var(--shadow);display:none;z-index:5}.toast.show{display:block}.mobilemenu{display:none}
+@media(max-width:1050px){.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.layout,.lower{grid-template-columns:1fr}.app{grid-template-columns:210px 1fr}.content{padding:22px}.topbar{padding:0 22px}}@media(max-width:700px){.app{display:block}.sidebar{display:none}.mobilemenu{display:inline-flex}.topbar{height:60px;padding:0 15px}.content{padding:20px 14px}.heading{display:block}.actions{margin-top:15px}.h1{font-size:24px}.metrics{gap:10px}.card{padding:14px}.metric-value{font-size:22px}.formgrid,.checkgrid,.resultgrid{grid-template-columns:1fr}.integration{grid-template-columns:1fr}.intarrow{transform:rotate(90deg);text-align:center}.scenarios{font-size:11px}.scenarios th,.scenarios td{padding:9px 4px}}
+
+.posture-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.posture-tile{border:1px solid var(--line);border-radius:12px;padding:13px;background:#fff;min-width:0}
+.posture-tile-head{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;font-size:11px;font-weight:750}
+.posture-score{display:flex;align-items:baseline;gap:4px;margin:10px 0 8px}
+.posture-score strong{font-size:25px;letter-spacing:-.7px}
+.posture-score span{font-size:10px;color:var(--muted)}
+.posture-bar{height:7px;background:#edf0f6;border-radius:10px;overflow:hidden}
+.posture-bar span{display:block;height:100%;border-radius:10px;background:#16a34a}
+.posture-bar .mid{background:#d97706}.posture-bar .low{background:#dc5656}
+.posture-meta{font-size:10px;color:var(--muted);margin-top:7px;line-height:1.4}
+.posture-foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:10px;margin-top:14px}
+.posture-list{display:flex;flex-direction:column;gap:13px}
+.posture-row{display:grid;grid-template-columns:minmax(125px,1fr) 2fr 42px;align-items:center;gap:12px}
+.posture-row .domain{font-size:12px;font-weight:700}
+.posture-row .detail{font-size:10px;color:var(--muted);margin-top:3px}
+.posture-row .num{text-align:right;font-size:15px;font-weight:800}
+.upload-zone{display:flex;flex-direction:column;align-items:center;text-align:center;gap:7px;border:1.5px dashed #b8c4dc;background:#f8faff;padding:22px 15px;border-radius:12px;cursor:pointer}
+.upload-zone:hover{border-color:var(--blue);background:#f2f5ff}
+.upload-icon{width:36px;height:36px;border-radius:10px;background:#e9edff;color:var(--blue);display:grid;place-items:center;font-size:23px}
+.upload-zone b{font-size:13px}.upload-zone span{font-size:11px;color:var(--muted);max-width:340px}
+.upload-zone input{max-width:100%;font-size:11px;margin-top:6px}
+.upload-status,.import-summary{font-size:11px;color:var(--muted);line-height:1.6;margin-top:12px}
+.import-chip{display:inline-flex;gap:5px;align-items:center;border:1px solid var(--line);border-radius:20px;padding:5px 8px;margin:3px;font-size:10px}
+.connector-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.connector-card{border:1px solid var(--line);border-radius:10px;padding:13px}
+.connector-card b{font-size:12px;display:block}.connector-card p{font-size:10px;color:var(--muted);line-height:1.5;margin:6px 0 10px}
+.score-legend{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.score-legend div{background:#f8f9fc;border:1px solid var(--line);padding:12px;border-radius:10px}
+.score-legend b{font-size:11px;display:block}.score-legend span{font-size:10px;color:var(--muted);display:block;margin-top:5px;line-height:1.5}
+@media(max-width:1000px){.posture-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.connector-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.score-legend{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.posture-grid,.connector-grid,.score-legend{grid-template-columns:1fr}.posture-row{grid-template-columns:minmax(90px,1fr) 1.3fr 35px}}
+</style></head>
+<body>
+<div class="app">
+<aside class="sidebar">
+ <div class="brand"><div class="brandmark">CR</div><div><strong>CyberRisk IQ</strong><small>CYBER POSTURE + FINANCIAL RISK</small></div></div>
+ <div class="nav"><div class="navlabel">Workspace</div><button class="active" data-view="dashboard"><span class="ico">▦</span> Overview</button><button data-view="assessment"><span class="ico">☷</span> Company assessment</button><button data-view="posture"><span class="ico">◈</span> Security posture & data</button><button data-view="analysis"><span class="ico">◉</span> Risk quantification</button><button data-view="reports"><span class="ico">▤</span> Reports</button><button data-view="history"><span class="ico">◷</span> Assessment history</button></div>
+ <div class="nav"><div class="navlabel">Platform</div><button data-view="integration"><span class="ico">⇄</span> Tech9 IQ integration</button><button data-view="methodology"><span class="ico">ⓘ</span> Methodology & limits</button></div>
+ <div class="sidebarfoot"><div id="apiStatus">Local mode · development build</div>Posture + CRQ MVP v0.5 · Sample data only<br>Designed for future Tech9 IQ integration</div>
+</aside>
+<main class="main">
+<header class="topbar"><div class="crumb"><button class="btn mobilemenu" id="mobileMenu">☰</button> Workspace / <b id="crumb">Overview</b></div><div class="topright"><span class="pill">● Prototype environment</span><div class="avatar">CR</div></div></header>
+<div class="content">
+<section class="view active" id="view-dashboard">
+ <div class="heading"><div><div class="eyebrow">Cyber financial intelligence</div><h1 class="h1">Risk overview</h1><div class="sub">Translate cyber exposure into financial scenarios, business priorities and an indicative insurance adequacy view.</div></div><div class="actions"><button class="btn" id="resetDemo">Reset demo</button><button class="btn primary" data-goto="assessment">＋ New assessment</button></div></div>
+ <div class="notice"><span>⚠</span><div><b>Illustrative demonstration data.</b> This prototype is not an actuarial model, an underwriting decision or insurance advice. Replace sample assumptions with validated data before using results for business decisions.</div></div>
+ <div class="card" style="margin-bottom:16px">
+  <div class="cardtitle"><div><h2>Cybersecurity posture by domain</h2><p>Preliminary 1–10 posture indicator. Scores gain confidence as structured evidence is imported; low evidence is not proof of weak security.</p></div><button class="btn" data-goto="posture">View evidence & data sources →</button></div>
+  <div id="postureSummary" class="posture-grid"></div>
+  <div class="posture-foot"><span id="postureEvidence">Evidence coverage: assessment answers only</span><span id="postureModel">Scoring model: heuristic v0.5</span></div>
+ </div>
+
+ <div class="grid metrics">
+  <div class="card"><div class="metric-top">Annualized loss estimate <span class="metric-icon">₹</span></div><div class="metric-value" id="kpiALE">₹2.4 Cr</div><div class="metric-foot">Expected annual loss · modeled scenarios</div></div>
+  <div class="card"><div class="metric-top">Severe-event loss <span class="metric-icon">↗</span></div><div class="metric-value" id="kpiSevere">₹8.5 Cr</div><div class="metric-foot">Illustrative high-impact scenario</div></div>
+  <div class="card"><div class="metric-top">Current cyber cover <span class="metric-icon">◇</span></div><div class="metric-value" id="kpiCover">₹3.0 Cr</div><div class="metric-foot">User-entered policy limit</div></div>
+  <div class="card"><div class="metric-top">Indicative coverage gap <span class="metric-icon">!</span></div><div class="metric-value" id="kpiGap">₹5.5 Cr</div><div class="metric-foot">Severe-event loss less nominal limit</div></div>
+ </div>
+ <div class="grid layout">
+  <div class="card"><div class="cardtitle"><div><h2>Estimated loss by cyber scenario</h2><p>Annualized loss estimates, based on current sample assumptions</p></div><span class="tag blue">Scenario model</span></div><div id="scenarioBars"></div><div class="legend"><span><i class="dot" style="background:#4263eb"></i>Annualized loss estimate</span><span>Values are illustrative, not predictions.</span></div></div>
+  <div class="card"><div class="cardtitle"><div><h2>Organization profile</h2><p>Current assessment context</p></div><span class="tag green" id="profileStatus">Demo profile</span></div><div class="barrow"><div class="barlabel"><span>Industry</span><b id="profileIndustry">Manufacturing</b></div></div><div class="barrow"><div class="barlabel"><span>Annual revenue</span><b id="profileRevenue">₹500 Cr</b></div></div><div class="barrow"><div class="barlabel"><span>Employees</span><b id="profileEmployees">2,000</b></div></div><div class="barrow"><div class="barlabel"><span>Critical systems</span><b id="profileSystems">ERP, email, OT</b></div></div><div class="barrow"><div class="barlabel"><span>Assessment completeness</span><b id="profileComplete">72%</b></div><div class="bar"><div class="fill teal" id="completeBar" style="width:72%"></div></div></div><button class="btn" style="width:100%;margin-top:8px" data-goto="assessment">Review company profile →</button></div>
+ </div>
+ <div class="grid lower">
+  <div class="card"><div class="cardtitle"><div><h2>Risk scenario register</h2><p>Prioritized scenarios requiring business attention</p></div><button class="btn" data-goto="analysis">View analysis</button></div><div style="overflow:auto"><table class="scenarios"><thead><tr><th>Scenario</th><th>Annual likelihood</th><th>Impact range</th><th>Annual loss</th></tr></thead><tbody id="scenarioTable"></tbody></table></div></div>
+  <div class="card"><div class="cardtitle"><div><h2>Insurance adequacy snapshot</h2><p>Comparison against modeled severe loss</p></div><span class="tag amber">Indicative</span></div><div class="coveragebox"><div class="coverrow"><span>Modeled severe-event loss</span><strong id="coverSevere">₹8.5 Cr</strong></div><div class="coverrow"><span>Current policy limit</span><strong id="coverCurrent">₹3.0 Cr</strong></div><div class="coverrow"><span>Nominal limit gap</span><strong class="gapnum" id="coverGap">₹5.5 Cr</strong></div><div class="bar" style="height:10px;margin:14px 0"><div class="fill red" id="coverBar" style="width:35%"></div></div><div class="smallprint">This simplified gap excludes policy wording, exclusions, waiting periods, deductibles, sublimits, coinsurance and insurer-specific terms.</div></div><button class="btn" style="width:100%;margin-top:13px" data-goto="analysis">Open coverage analysis →</button></div>
+ </div>
+</section>
+<section class="view" id="view-assessment">
+ <div class="heading"><div><div class="eyebrow">Organization onboarding</div><h1 class="h1">Company assessment</h1><div class="sub">Enter company and risk context. Saving recalculates the prototype dashboard locally in this browser.</div></div><div class="actions"><button class="btn" id="loadDemo">Load demo profile</button><button class="btn primary" id="runAssessment">Save & calculate</button></div></div>
+ <div class="notice"><span>i</span><div>Development mode: use fictional or non-sensitive data only. Calculations use the local scenario API when the development server is running. Authentication and production-grade tenant security are not configured.</div></div>
+ <div class="card"><div class="formsection" style="margin-top:0">Organization details</div><div class="formgrid">
+ <div class="field"><label for="company">Organization name</label><input id="company" value="Demo Manufacturing Ltd."></div>
+ <div class="field"><label for="industry">Industry</label><select id="industry"><option>Manufacturing</option><option>IT Services</option><option>Healthcare</option><option>Financial Services</option><option>Retail & E-commerce</option><option>Automotive</option><option>Energy & Utilities</option><option>Other</option></select></div>
+ <div class="field"><label for="revenue">Annual revenue (₹ crore)</label><input id="revenue" type="number" min="0" value="500"></div>
+ <div class="field"><label for="employees">Number of employees</label><input id="employees" type="number" min="1" value="2000"></div>
+ <div class="field"><label for="locations">Operating locations</label><input id="locations" type="number" min="1" value="5"></div>
+ <div class="field"><label for="downtime">Tolerable business downtime (days)</label><input id="downtime" type="number" min="0" max="365" value="30"><small>Estimate the number of days the business can tolerate a critical cyber-related disruption.</small></div>
+ </div>
+ <div class="formsection">Technology and business exposure</div><div class="formgrid">
+ <div class="field"><label for="email">Email platform</label><select id="email"><option>Microsoft 365</option><option>Google Workspace</option><option>Zoho</option><option>On-premises</option><option>Other / mixed</option></select></div>
+ <div class="field"><label for="cloud">Primary cloud</label><select id="cloud"><option>Azure</option><option>AWS</option><option>Google Cloud</option><option>Private / on-premises</option><option>Multi-cloud</option><option>No cloud</option></select></div>
+ <div class="field"><label for="data">Sensitive data exposure</label><select id="data"><option value="high">High — personal, financial or regulated data</option><option value="medium" selected>Medium — customer and business data</option><option value="low">Low — limited sensitive data</option></select></div>
+ <div class="field"><label for="criticality">Business continuity criticality</label><select id="criticality"><option value="high">High — operations stop quickly</option><option value="medium" selected>Medium — partial disruption possible</option><option value="low">Low — workarounds available</option></select></div>
+ </div>
+ <div class="formsection">Security controls currently in place</div><div class="checkgrid">
+ <label class="check"><input type="checkbox" id="edr" checked><div><b>EDR / XDR</b><span>Endpoint detection and response</span></div></label>
+ <label class="check"><input type="checkbox" id="mfa" checked><div><b>MFA / identity security</b><span>Strong authentication for users and admins</span></div></label>
+ <label class="check"><input type="checkbox" id="backup" checked><div><b>Isolated, tested backups</b><span>Recovery capability verified periodically</span></div></label>
+ <label class="check"><input type="checkbox" id="emailsec"><div><b>Email security / anti-phishing</b><span>Advanced email controls and user reporting</span></div></label>
+ <label class="check"><input type="checkbox" id="siem"><div><b>SIEM / MDR monitoring</b><span>Centralized detection and response</span></div></label>
+ <label class="check"><input type="checkbox" id="vapt" checked><div><b>Regular vulnerability assessment</b><span>Scanning, remediation and validation</span></div></label>
+ <label class="check"><input type="checkbox" id="drl"><div><b>Documented incident response plan</b><span>Tested response and escalation process</span></div></label>
+ <label class="check"><input type="checkbox" id="ot"><div><b>OT / critical supplier segmentation</b><span>Relevant where production or suppliers are critical</span></div></label>
+ </div>
+ <div class="formsection">Existing cyber insurance</div><div class="formgrid">
+ <div class="field"><label for="cover">Current cyber policy limit (₹ crore)</label><input id="cover" type="number" min="0" value="3"><small>Nominal limit only; does not imply full recoverability.</small></div>
+ <div class="field"><label for="deductible">Deductible / retention (₹ lakh)</label><input id="deductible" type="number" min="0" value="25"></div>
+ </div><div style="display:flex;justify-content:flex-end;margin-top:20px"><button class="btn primary" id="runAssessment2">Save & calculate risk →</button></div>
+ </div>
+</section>
+
+<section class="view" id="view-posture">
+ <div class="heading"><div><div class="eyebrow">Security posture & evidence</div><h1 class="h1">Posture and data sources</h1><div class="sub">See domain-level scores and improve confidence by uploading structured security reports. Live integrations are designed as a later phase.</div></div><div class="actions"><button class="btn" id="clearImported">Clear imported findings</button><button class="btn primary" data-goto="assessment">Update company profile</button></div></div>
+ <div class="notice"><span>i</span><div><b>Evidence and scoring note:</b> the 1–10 scores are preliminary indicators, not certifications. CSV/JSON imports are normalized in this browser in v0.6. PDF/DOCX report extraction and live vendor APIs are not enabled yet. Do not upload confidential customer reports to this local prototype.</div></div>
+ <div class="grid layout">
+  <div class="card"><div class="cardtitle"><div><h2>Security domain scores</h2><p>Scores are recalculated from the profile checklist and imported structured findings.</p></div><span class="tag blue">Scale 1–10</span></div><div id="postureDetail" class="posture-list"></div></div>
+  <div class="card"><div class="cardtitle"><div><h2>Evidence intake</h2><p>Upload structured exports from security tools or assessments.</p></div></div>
+   <label class="upload-zone" for="reportUpload"><span class="upload-icon">↑</span><b>Choose CSV or JSON report</b><span>Expected fields can include domain/category, severity, status, finding/title, asset and description.</span><input id="reportUpload" type="file" accept=".csv,.json,.txt" multiple></label>
+   <div id="uploadStatus" class="upload-status">No report imported in this session.</div>
+   <div class="smallprint">Supported now: CSV and JSON with finding rows. TXT is accepted as raw notes, but it will not be automatically scored unless structured rows can be detected. PDF parsing is planned.</div>
+   <div class="formsection">Imported report findings</div><div id="importSummary" class="import-summary">No imported findings.</div>
+   <div class="actions" style="margin-top:12px">
+    <button class="btn" id="exportFindingsCsv">Export normalized CSV</button>
+    <button class="btn" id="exportFindingsJson">Export normalized JSON</button>
+   </div>
+   <div id="importValidation" class="smallprint" style="margin-top:10px">Validation report will appear after import.</div>
+  </div>
+ </div>
+ <div class="card" style="margin-top:16px"><div class="cardtitle"><div><h2>Normalized findings register</h2><p>Review normalized evidence before using it in a risk decision.</p></div><span class="tag blue">v0.6 schema</span></div>
+  <div style="overflow:auto"><table class="scenarios"><thead><tr><th>Finding</th><th>Domain</th><th>Severity</th><th>Status</th><th>Asset</th><th>Source</th></tr></thead><tbody id="normalizedFindingsTable"><tr><td colspan="6">Import a CSV or JSON report to populate the register.</td></tr></tbody></table></div>
+  <p class="smallprint">Imports remain in this browser tab/session. This build does not upload evidence to a server. Review normalized fields before relying on them; source data may be incomplete or vendor-specific.</p>
+ </div>
+ <div class="card" style="margin-top:16px"><div class="cardtitle"><div><h2>Integration catalogue</h2><p>Connectors are listed for planning only; none are live in this build.</p></div><span class="tag amber">Not connected</span></div>
+  <div class="connector-grid" id="connectorGrid"></div>
+ </div>
+ <div class="card" style="margin-top:16px"><div class="cardtitle"><div><h2>How to read the score</h2><p>Designed to avoid presenting missing evidence as a strong security posture.</p></div></div>
+  <div class="score-legend">
+   <div><b>1–3 · Weak</b><span>Major gaps or high-severity open findings.</span></div>
+   <div><b>4–6 · Developing</b><span>Partial controls, inconsistent evidence or remediation backlog.</span></div>
+   <div><b>7–8 · Strong</b><span>Controls appear implemented; evidence and coverage still matter.</span></div>
+   <div><b>9–10 · Mature</b><span>Broad verified coverage, tested controls and few material gaps.</span></div>
+  </div>
+ </div>
+</section>
+<section class="view" id="view-analysis">
+ <div class="heading"><div><div class="eyebrow">Quantitative analysis</div><h1 class="h1">Risk quantification</h1><div class="sub">Scenario-based estimates, annualized loss and insurance adequacy view. Assumptions are transparent and intentionally simplified.</div></div><div class="actions"><button class="btn" id="exportAnalysis">Export summary CSV</button><button class="btn primary" id="toReports">Generate report</button></div></div>
+ <div class="notice"><span>⚠</span><div>The prototype uses illustrative scenario frequencies and impact multipliers. These are not calibrated industry statistics or actuarial estimates. Production use requires model validation and confidence ranges.</div></div>
+ <div class="grid resultgrid"><div class="resultbox"><span>Modeled annualized loss</span><strong id="analysisALE">₹2.4 Cr</strong></div><div class="resultbox"><span>Highest single-scenario impact</span><strong id="analysisImpact">₹8.5 Cr</strong></div><div class="resultbox"><span>Current cover vs severe loss</span><strong id="analysisGap">₹5.5 Cr gap</strong></div></div>
+ <div class="grid layout"><div class="card"><div class="cardtitle"><div><h2>Scenario loss contribution</h2><p>Estimated annual loss by scenario</p></div><span class="tag blue">INR</span></div><div id="analysisBars"></div></div><div class="card"><div class="cardtitle"><div><h2>Interpretation</h2><p>Decision-support findings from current inputs</p></div></div><div id="interpretation" class="risklist"></div></div></div>
+ <div class="card" style="margin-top:16px"><div class="cardtitle"><div><h2>Scenario assumptions</h2><p>Editable assumptions are not yet enabled; values shown are generated from the profile and fixed prototype factors.</p></div></div><div style="overflow:auto"><table class="scenarios"><thead><tr><th>Scenario</th><th>Illustrative likelihood</th><th>Impact estimate</th><th>Annualized loss</th></tr></thead><tbody id="analysisTable"></tbody></table></div></div>
+</section>
+<section class="view" id="view-reports">
+ <div class="heading"><div><div class="eyebrow">Executive reporting</div><h1 class="h1">Reports</h1><div class="sub">Generate a printable executive report from the current assessment.</div></div><div class="actions"><button class="btn primary" id="printReport">Print / Save as PDF</button></div></div>
+ <div class="card" id="printableReport"><div class="cardtitle"><div><div class="eyebrow">CyberRisk IQ · Assessment report</div><h2 id="reportCompany" style="font-size:21px;margin:8px 0">Demo Manufacturing Ltd.</h2><p id="reportMeta">Manufacturing · Illustrative assessment · INR</p></div><span class="tag amber">Preliminary</span></div>
+ <div class="notice"><span>i</span><div>This report is generated from information entered into the prototype and simplified assumptions. It is not an audit, security certification, actuarial opinion or insurance advice.</div></div>
+ <div class="grid resultgrid"><div class="resultbox"><span>Annualized loss estimate</span><strong id="reportALE">₹2.4 Cr</strong></div><div class="resultbox"><span>Severe-event loss estimate</span><strong id="reportSevere">₹8.5 Cr</strong></div><div class="resultbox"><span>Nominal coverage gap</span><strong id="reportGap">₹5.5 Cr</strong></div></div>
+ <h3>Executive interpretation</h3><p id="reportNarrative" style="color:#4d5a72;line-height:1.7">This demonstration report identifies potential cyber loss scenarios and compares a severe-event estimate with the stated policy limit.</p>
+ <h3>Security posture by domain</h3><div id="postureReport" class="posture-grid"></div><p class="smallprint">Domain scores are preliminary heuristics based on profile signals and imported structured findings. They are not certifications; imported findings are not yet used directly to recalculate financial-loss scenarios.</p>
+ <h3>Scenario estimates</h3><div style="overflow:auto"><table class="scenarios"><thead><tr><th>Scenario</th><th>Likelihood</th><th>Impact</th><th>Annualized loss</th></tr></thead><tbody id="reportTable"></tbody></table></div>
+ <h3>Recommended next actions</h3><ol id="reportActions" style="color:#4d5a72;line-height:1.9"><li>Validate key assumptions with business and security owners.</li><li>Test backup recovery and incident response.</li><li>Review insurance wording with a qualified broker.</li></ol>
+ <h3>Model limitations</h3><p class="smallprint">The calculations are illustrative, based on simplified scenario factors and user-entered data. They do not represent statistically validated loss distributions. Policy recovery depends on wording, exclusions, conditions, sublimits, deductibles and claims facts. Obtain qualified cyber risk and insurance review before making decisions.</p>
+ </div>
+</section>
+<section class="view" id="view-integration">
+ <div class="heading"><div><div class="eyebrow">Future-ready architecture</div><h1 class="h1">Tech9 IQ integration</h1><div class="sub">The prototype keeps the integration boundary explicit so this product can connect to Tech9 IQ later without rebuilding the risk engine.</div></div><span class="tag amber">Not connected</span></div>
+ <div class="notice"><span>i</span><div>No live Tech9 IQ connection is configured. Endpoint paths below are proposed interface contracts, not real or verified Tech9 IQ APIs.</div></div>
+ <div class="card"><div class="cardtitle"><div><h2>Proposed integration flow</h2><p>Use authenticated APIs and a versioned data contract</p></div></div>
+ <div class="integration"><div class="intbox"><div style="font-size:25px">◈</div><strong>Tech9 IQ</strong><small>Existing dashboard, identity and organization context</small></div><div class="intarrow">⇄</div><div class="intbox"><div style="font-size:25px">◉</div><strong>CyberRisk IQ engine</strong><small>Assessment, scenario model, exposure and report outputs</small></div></div>
+ <div class="formsection">Proposed data exchanged</div><div class="grid" style="grid-template-columns:repeat(2,minmax(0,1fr));gap:10px"><div class="resultbox"><b>Inbound from Tech9 IQ</b><p class="smallprint">Organization ID, authorized user identity, approved asset inventory, security posture findings and assessment timestamps.</p></div><div class="resultbox"><b>Outbound to Tech9 IQ</b><p class="smallprint">Assessment status, scenario risk estimates, annualized loss estimate, severe-loss range, coverage-gap indicator, report link and model version.</p></div></div>
+ <div class="formsection">Example API contract (proposed)</div><pre class="code">POST /api/v1/assessments
+GET  /api/v1/organizations/{organization_id}/risk-summary
+GET  /api/v1/assessments/{assessment_id}/report
+
+{
+  "organization_id": "org_example",
+  "assessment_id": "assess_example",
+  "currency": "INR",
+  "model_version": "0.1-demo",
+  "annualized_loss_estimate": {
+    "value": 24000000,
+    "confidence": "illustrative_only"
+  },
+  "severe_event_loss_estimate": {
+    "value": 85000000,
+    "confidence": "illustrative_only"
+  },
+  "coverage_gap_estimate": {
+    "value": 55000000,
+    "basis": "severe_loss_minus_nominal_limit"
+  }
+}</pre>
+ <div class="formsection">Integration requirements before connecting</div><ul style="color:#53617a;line-height:1.9"><li>Confirm Tech9 IQ authentication and authorization model (e.g. OAuth/OIDC or service-to-service credentials).</li><li>Agree organization identifiers, tenant boundaries, field definitions and data ownership.</li><li>Confirm available APIs, webhook support, rate limits and security review requirements.</li><li>Use versioned API contracts, audit logs, encryption and explicit consent for data exchange.</li><li>Never transmit secrets or sensitive assessment data to an unapproved AI provider.</li></ul>
+ </div>
+</section>
+<section class="view" id="view-history">
+ <div class="heading"><div><div class="eyebrow">Assessment records</div><h1 class="h1">Assessment history</h1><div class="sub">Saved assessment snapshots from the local development database. This is a single-user development feature, not a secure multi-tenant workspace.</div></div><div class="actions"><button class="btn" id="refreshHistory">Refresh records</button><button class="btn primary" data-goto="assessment">＋ New assessment</button></div></div>
+ <div class="notice"><span>i</span><div>History is available when you launch the app through start_windows.bat or start_mac_linux.sh and open it at http://127.0.0.1:8765. Opening index.html directly will not connect to the database.</div></div>
+ <div class="card"><div class="cardtitle"><div><h2>Saved assessments</h2><p>Most recent 200 records</p></div><span class="tag blue" id="historyCount">0 records</span></div><div style="overflow:auto"><table class="scenarios"><thead><tr><th>Organization</th><th>Industry</th><th>Saved at (UTC)</th><th>Model</th><th>ID</th></tr></thead><tbody id="historyTable"><tr><td colspan="5">Click Refresh records to load saved assessments.</td></tr></tbody></table></div></div>
+ </section>
+ <section class="view" id="view-methodology">
+ <div class="notice"><span>i</span><div>Posture scores are heuristic indicators in v0.5. Imported findings affect domain scores, but are not yet fed into the financial-loss model. A production release must map source findings to validated control and scenario logic.</div></div>
+
+ <div class="heading"><div><div class="eyebrow">Transparency & governance</div><h1 class="h1">Methodology & limitations</h1><div class="sub">A credible product must show how its results are produced and what they do—and do not—mean.</div></div></div>
+ <div class="grid" style="grid-template-columns:repeat(2,minmax(0,1fr))">
+ <div class="card"><h2 style="font-size:15px">Proposed quantitative method</h2><ol style="color:#53617a;line-height:1.9"><li>Define business-relevant cyber loss scenarios.</li><li>Estimate event frequency using documented evidence and assumptions.</li><li>Estimate primary and secondary financial impacts.</li><li>Calculate scenario annualized loss as frequency × average loss magnitude, where suitable.</li><li>Model uncertainty and aggregate loss distributions when sufficient data and expertise exist.</li><li>Compare selected loss percentiles with policy terms and risk appetite.</li></ol><p class="smallprint">Explore FAIR as a methodology reference. A production model needs qualified design and validation.</p></div>
+ <div class="card"><h2 style="font-size:15px">Guardrails</h2><div class="risklist"><div class="riskitem"><div class="riskbullet">✓</div><div><strong>Show assumptions</strong><span>Expose inputs, source, confidence and model version.</span></div></div><div class="riskitem"><div class="riskbullet">✓</div><div><strong>Separate facts from estimates</strong><span>Mark user-provided, imported, inferred and illustrative data distinctly.</span></div></div><div class="riskitem"><div class="riskbullet">✓</div><div><strong>No false precision</strong><span>Use ranges and uncertainty when supported; avoid unsupported exact recommendations.</span></div></div><div class="riskitem"><div class="riskbullet">✓</div><div><strong>Human validation</strong><span>Require expert review before underwriting, purchasing or board-level reliance.</span></div></div></div></div>
+ <div class="card"><h2 style="font-size:15px">What this prototype does today</h2><ul style="color:#53617a;line-height:1.9"><li>Runs in a browser as a standalone demo.</li><li>Allows company profile and control inputs.</li><li>Calculates illustrative scenario estimates from deterministic factors.</li><li>Updates dashboard and report views from entered data.</li><li>Exports a scenario summary and supports print-to-PDF.</li></ul></div>
+ <div class="card"><h2 style="font-size:15px">What is not implemented yet</h2><ul style="color:#53617a;line-height:1.9"><li>Secure user accounts, multi-tenant backend and persistent database.</li><li>Live integrations with EDR, SIEM, cloud or vulnerability scanners.</li><li>Statistically validated loss model and calibration dataset.</li><li>Verified Tech9 IQ API connection.</li><li>Formal legal, privacy, penetration-test and insurance review.</li></ul></div>
+ </div>
+</section>
+</div></main></div><div class="toast" id="toast"></div>
+<script>
+const $=id=>document.getElementById(id);let currentView='dashboard';
+const defaults={company:'Demo Manufacturing Ltd.',industry:'Manufacturing',revenue:500,employees:2000,locations:5,downtime:30,email:'Microsoft 365',cloud:'Azure',data:'medium',criticality:'medium',edr:true,mfa:true,backup:true,emailsec:false,siem:false,vapt:true,drl:false,ot:false,cover:3,deductible:25};
+let state={...defaults};
+try{const saved=JSON.parse(localStorage.getItem('cyberrisk_iq_profile_v02')||'null');if(saved&&typeof saved==='object')state={...defaults,...saved}}catch(e){}
+const fmtCr=n=>'₹'+(n<1?(n*100).toFixed(0)+' L':n.toLocaleString('en-IN',{maximumFractionDigits:1,minimumFractionDigits: n%1===0?0:1})+' Cr');
+const fmtMoney=n=>fmtCr(n);
+function getInputs(){return {company:$('company').value.trim()||'Unnamed organization',industry:$('industry').value,revenue:Math.max(0,Number($('revenue').value)||0),employees:Math.max(1,Number($('employees').value)||1),locations:Math.max(1,Number($('locations').value)||1),downtime:Math.max(0,Number($('downtime').value)||0),email:$('email').value,cloud:$('cloud').value,data:$('data').value,criticality:$('criticality').value,edr:$('edr').checked,mfa:$('mfa').checked,backup:$('backup').checked,emailsec:$('emailsec').checked,siem:$('siem').checked,vapt:$('vapt').checked,drl:$('drl').checked,ot:$('ot').checked,cover:Math.max(0,Number($('cover').value)||0),deductible:Math.max(0,Number($('deductible').value)||0)}}
+function calc(s){let scale=Math.max(.35,Math.min(2.5,Math.sqrt(Math.max(1,s.revenue)/500)));let dataFactor={high:1.35,medium:1,low:.72}[s.data];let critFactor={high:1.4,medium:1,low:.7}[s.criticality];let industryFactor={'Manufacturing':1.12,'IT Services':1.1,'Healthcare':1.25,'Financial Services':1.35,'Retail & E-commerce':1.05,'Automotive':1.15,'Energy & Utilities':1.3,'Other':1}[s.industry]||1;let controls=(s.edr ? .10 : 0)+(s.mfa ? .09 : 0)+(s.backup ? .16 : 0)+(s.emailsec ? .08 : 0)+(s.siem ? .10 : 0)+(s.vapt ? .07 : 0)+(s.drl ? .08 : 0)+(s.ot ? .05 : 0);let controlFactor=Math.max(.48,1-controls);let base=scale*dataFactor*critFactor*industryFactor*controlFactor;let scenarios=[
+{name:'Ransomware & business interruption',freq:.32,impact:Math.max(1.2,s.revenue*.012+s.downtime*.08),factor:1.0,likelihood:'Moderate'},
+{name:'Data breach & privacy response',freq:.28,impact:Math.max(.7,s.revenue*.006)*dataFactor,factor:1.0,likelihood:'Moderate'},
+{name:'Business email compromise / fraud',freq:.38,impact:Math.max(.35,s.revenue*.0025),factor:1.0,likelihood:'Moderate'},
+{name:'Critical supplier / cloud outage',freq:.24,impact:Math.max(.8,s.revenue*.005)*critFactor,factor:1.0,likelihood:'Low–moderate'},
+{name:'Production / critical system disruption',freq:.20,impact:Math.max(1,s.revenue*.009+s.downtime*.12)*critFactor,factor:1.0,likelihood:'Low–moderate'}
+];scenarios=scenarios.map((x,i)=>{let controlReduction=1-controls*(i===0 && s.backup ? .7 : 1);let impact=x.impact*base*controlReduction;let freq=x.freq*(s.mfa?.88:1)*(s.emailsec?.88:1)*(s.siem?.9:1);return {...x,impact,frequency:freq,ale:impact*freq}});let ale=scenarios.reduce((a,b)=>a+b.ale,0);let severe=Math.max(...scenarios.map(x=>x.impact))*1.18;let gap=Math.max(0,severe-s.cover);let completeness=Math.round(42+([s.edr,s.mfa,s.backup,s.emailsec,s.siem,s.vapt,s.drl,s.ot].filter(Boolean).length/8)*40+18);completeness=Math.min(100,completeness);return {scenarios,ale,severe,gap,completeness,controls,scale}}
+function barsHTML(scenarios){let max=Math.max(...scenarios.map(x=>x.ale),.1);return scenarios.map(x=>`<div class="barrow"><div class="barlabel"><span>${x.name}</span><span>${fmtCr(x.ale)}</span></div><div class="bar"><div class="fill" style="width:${Math.max(3,x.ale/max*100)}%"></div></div></div>`).join('')}
+function tableHTML(scenarios){return scenarios.map(x=>`<tr><td><span class="scenname">${x.name}</span><span class="muted">Provisional scenario assumption</span></td><td>${Math.round(x.frequency*100)}%</td><td>${fmtCr(x.impact)}</td><td><b>${fmtCr(x.ale)}</b></td></tr>`).join('')}
+function render(resultOverride=null){let s=state,r=resultOverride||calc(s);$('kpiALE').textContent=fmtCr(r.ale);$('kpiSevere').textContent=fmtCr(r.severe);$('kpiCover').textContent=fmtCr(s.cover);$('kpiGap').textContent=fmtCr(r.gap);$('scenarioBars').innerHTML=barsHTML(r.scenarios);$('analysisBars').innerHTML=barsHTML(r.scenarios);$('scenarioTable').innerHTML=tableHTML(r.scenarios);$('analysisTable').innerHTML=tableHTML(r.scenarios);$('profileIndustry').textContent=s.industry;$('profileRevenue').textContent=fmtCr(s.revenue);$('profileEmployees').textContent=s.employees.toLocaleString('en-IN');$('profileSystems').textContent=s.industry==='Manufacturing'?'ERP, email, OT':s.industry==='IT Services'?'Cloud, identity, source code':'Core apps, email, data';$('profileComplete').textContent=r.completeness+'%';$('completeBar').style.width=r.completeness+'%';$('coverSevere').textContent=fmtCr(r.severe);$('coverCurrent').textContent=fmtCr(s.cover);$('coverGap').textContent=fmtCr(r.gap);$('coverBar').style.width=Math.min(100,s.cover/Math.max(r.severe,.1)*100)+'%';$('analysisALE').textContent=fmtCr(r.ale);$('analysisImpact').textContent=fmtCr(r.severe);$('analysisGap').textContent=fmtCr(r.gap)+' gap';$('reportCompany').textContent=s.company;$('reportMeta').textContent=s.industry+' · '+(r.modelVersion||'Browser fallback model')+' · INR crore';$('reportALE').textContent=fmtCr(r.ale);$('reportSevere').textContent=fmtCr(r.severe);$('reportGap').textContent=fmtCr(r.gap);$('reportTable').innerHTML=tableHTML(r.scenarios);$('reportNarrative').textContent=`For ${s.company}, the scenario model estimates base-band annualized loss of ${fmtCr(r.ale)}. The largest modeled base-band single-event severity is ${fmtCr(r.severe)}. The entered nominal policy limit is ${fmtCr(s.cover)}, leaving a simplified nominal gap of ${fmtCr(r.gap)} before policy terms and recoverability are considered. Scenario bands are provisional assumptions, not statistical confidence intervals or actuarial advice.`;
+let findings=[];if(!s.backup)findings.push(['Backups not confirmed','Validate isolated backups and run a restore exercise.']);if(!s.mfa)findings.push(['MFA not confirmed','Prioritize MFA for email, remote access and privileged accounts.']);if(!s.siem)findings.push(['Centralized monitoring not confirmed','Evaluate monitoring coverage, alert response and escalation.']);if(!s.drl)findings.push(['Incident response plan not confirmed','Document and exercise an incident response and recovery plan.']);if(r.gap>0)findings.push(['Potential insurance adequacy gap',`Severe-loss estimate exceeds nominal policy limit by ${fmtCr(r.gap)}; review actual policy wording with a qualified broker.`]);if(!findings.length)findings.push(['Validate controls and assumptions','Collect evidence and validate loss assumptions with business owners.']);$('interpretation').innerHTML=findings.slice(0,5).map((f,i)=>`<div class="riskitem"><div class="riskbullet">${i+1}</div><div><strong>${f[0]}</strong><span>${f[1]}</span></div></div>`).join('');$('reportActions').innerHTML=findings.slice(0,5).map(f=>`<li>${f[0]}: ${f[1]}</li>`).join('');return r}
+
+const POSTURE_DOMAINS=[
+ {id:'infrastructure',name:'Infrastructure & network',description:'Network segmentation, firewalls, secure configuration, exposed services',controls:['vapt','ot'],base:5.4,keywords:['network','firewall','infrastructure','segment','port','router','switch','server','patch']},
+ {id:'cloud',name:'Cloud security',description:'Cloud configuration, identity, public exposure, logging and workload protection',controls:['mfa','siem','vapt'],base:5.0,keywords:['cloud','aws','azure','gcp','s3','storage','iam','misconfiguration','public access']},
+ {id:'endpoint',name:'Endpoint / EDR / XDR',description:'Endpoint coverage, detection, response and device hygiene',controls:['edr','vapt'],base:5.0,keywords:['endpoint','edr','xdr','device','malware','antivirus','agent']},
+ {id:'identity',name:'Identity & access',description:'MFA, privileged access, identity lifecycle and access reviews',controls:['mfa'],base:5.0,keywords:['identity','iam','mfa','privilege','password','access','account']},
+ {id:'email',name:'Email security',description:'Anti-phishing, DMARC, email authentication and malicious attachment protection',controls:['emailsec','mfa'],base:4.8,keywords:['email','phishing','dmarc','spf','dkim','mailbox','business email']},
+ {id:'data',name:'Data protection / DLP / DSPM',description:'Sensitive-data discovery, classification, access and exfiltration controls',controls:['mfa','vapt'],base:4.8,keywords:['dlp','dspm','data','exfiltration','sensitive','classification','leak']},
+ {id:'detection',name:'SIEM / SOC / response',description:'Log coverage, alert quality, monitoring and incident response',controls:['siem','drl'],base:4.5,keywords:['siem','soc','log','alert','incident','response','detection','monitoring','mttd','mttr']},
+ {id:'vulnerability',name:'Vulnerability & patching',description:'Scanning coverage, remediation SLAs and verified fixes',controls:['vapt'],base:5.0,keywords:['vulnerability','cve','patch','vapt','remediation','critical finding']},
+ {id:'grc',name:'GRC & third-party risk',description:'Policies, compliance evidence, risk ownership and supplier assurance',controls:['drl'],base:5.0,keywords:['grc','compliance','iso 27001','dpdp','dpdpa','third-party','supplier','policy','audit']},
+ {id:'resilience',name:'Backup & resilience',description:'Backup isolation, restore tests, recovery objectives and continuity',controls:['backup','drl'],base:5.0,keywords:['backup','restore','recovery','rto','rpo','disaster recovery','business continuity']}
+];
+let importedFindings=[];
+let importedFiles=[];
+const CONNECTORS=[
+ ['Cloud security','AWS, Azure, Google Cloud posture and configuration exports','Planned'],
+ ['Endpoint / EDR / XDR','Endpoint coverage, alert and vulnerability exports','Planned'],
+ ['DLP / DSPM','Sensitive-data and data-loss findings','Planned'],
+ ['Email security','Microsoft 365, Google Workspace and email-security reports','Planned'],
+ ['SIEM / SOC','Use-case coverage, alerts and incident metrics','Planned'],
+ ['GRC / vulnerability','Compliance controls, VAPT and remediation evidence','Planned']
+];
+function classifyDomain(f){
+ const explicit=String(f.domain||f.category||f.product||f.source||'').toLowerCase();
+ const blob=(explicit+' '+String(f.finding||f.title||f.name||f.description||f.asset||'')).toLowerCase();
+ let best=POSTURE_DOMAINS.find(d=>blob.includes(d.id));
+ if(best)return best;
+ let winner=null,score=0;
+ for(const d of POSTURE_DOMAINS){let n=d.keywords.reduce((a,k)=>a+(blob.includes(k)?1:0),0);if(n>score){score=n;winner=d}}
+ return winner||POSTURE_DOMAINS[0];
+}
+function severityWeight(v){
+ const x=String(v||'medium').toLowerCase();
+ if(/critical|urgent|p1|sev.?1/.test(x))return 4;
+ if(/high|major|p2|sev.?2/.test(x))return 3;
+ if(/medium|moderate|p3|sev.?3/.test(x))return 2;
+ if(/low|minor|p4|sev.?4/.test(x))return 1;
+ if(/info|informational/.test(x))return .25;
+ return 1.5;
+}
+function isOpenFinding(f){const s=String(f.status||f.state||'open').toLowerCase();return !/closed|resolved|fixed|remediated|accepted|not applicable|false positive/.test(s)}
+function scoreDomains(s){
+ return POSTURE_DOMAINS.map(d=>{
+   let score=d.base;
+   // Profile controls are coarse signals only; absence reduces the heuristic score.
+   const relevant=d.controls;
+   const on=relevant.filter(k=>!!s[k]).length;
+   score += relevant.length ? ((on/relevant.length)-0.5)*2.0 : 0;
+   if(d.id==='cloud' && ['No cloud','Private / on-premises'].includes(s.cloud))score= Math.max(score,6.0);
+   if(d.id==='email' && s.email==='Microsoft 365' && s.emailsec)score+=.5;
+   const related=importedFindings.filter(f=>classifyDomain(f).id===d.id);
+   const open=related.filter(isOpenFinding);
+   const penalty=Math.min(6,open.reduce((a,f)=>a+severityWeight(f.severity||f.risk||f.priority)*.42,0));
+   score-=penalty;
+   // Without evidence, scores are deliberately capped and confidence is low.
+   const hasControlEvidence=related.length>0 || relevant.some(k=>s[k]!==undefined);
+   if(related.length===0)score=Math.min(score,7.0);
+   score=Math.max(1,Math.min(10,score));
+   const confidence=related.length>=10?'Higher':related.length>=3?'Moderate':'Low';
+   return {...d,score:Math.round(score*10)/10,findings:related.length,open:open.length,confidence};
+ });
+}
+function scoreColor(score){return score<4?'low':score<7?'mid':''}
+function renderPosture(){
+ const scores=scoreDomains(state);
+ const tileHTML=scores.slice(0,8).map(d=>`<div class="posture-tile"><div class="posture-tile-head"><span>${d.name}</span><span class="tag ${d.score<4?'red':d.score<7?'amber':'green'}">${d.score<4?'Weak':d.score<7?'Developing':'Strong'}</span></div><div class="posture-score"><strong>${d.score.toFixed(1)}</strong><span>/ 10</span></div><div class="posture-bar"><span class="${scoreColor(d.score)}" style="width:${d.score*10}%"></span></div><div class="posture-meta">${d.findings} imported findings · ${d.confidence} evidence confidence</div></div>`).join('');
+ if($('postureSummary'))$('postureSummary').innerHTML=tileHTML;
+ if($('postureDetail'))$('postureDetail').innerHTML=scores.map(d=>`<div class="posture-row"><div><div class="domain">${d.name}</div><div class="detail">${d.open} open / ${d.findings} imported</div></div><div><div class="posture-bar"><span class="${scoreColor(d.score)}" style="width:${d.score*10}%"></span></div><div class="detail">${d.description}</div></div><div class="num">${d.score.toFixed(1)}</div></div>`).join('');
+ const pr=$('postureReport');if(pr)pr.innerHTML=scores.map(d=>`<div class="posture-tile"><div class="posture-tile-head"><span>${d.name}</span></div><div class="posture-score"><strong>${d.score.toFixed(1)}</strong><span>/ 10</span></div><div class="posture-bar"><span class="${scoreColor(d.score)}" style="width:${d.score*10}%"></span></div><div class="posture-meta">${d.open} open finding(s) · ${d.confidence} evidence confidence</div></div>`).join('');
+ const ev=$('postureEvidence');if(ev)ev.textContent=importedFindings.length?`Evidence coverage: ${importedFiles.length} file(s), ${importedFindings.length} structured finding(s)`:'Evidence coverage: profile checklist only; upload reports to increase evidence';
+ const imp=$('importSummary');if(imp)imp.innerHTML=importedFindings.length?`<b>${importedFindings.length}</b> structured findings loaded. <b>${importedFindings.filter(isOpenFinding).length}</b> appear open. `+importedFiles.map(f=>`<span class="import-chip">${escapeHTML(f.name)} · ${f.rows} rows</span>`).join(''):'No imported findings. Scores are based on coarse profile signals only.';
+ const connectors=$('connectorGrid');if(connectors)connectors.innerHTML=CONNECTORS.map(c=>`<div class="connector-card"><b>${c[0]}</b><p>${c[1]}</p><span class="tag amber">${c[2]}</span></div>`).join('');
+}
+function normalizeFinding(row,fileName){
+ const pick=(...keys)=>{for(const k of keys){const found=Object.keys(row).find(x=>x.toLowerCase().replace(/[^a-z0-9]/g,'')===k.toLowerCase().replace(/[^a-z0-9]/g,''));if(found&&row[found]!==undefined)return row[found]}return ''};
+ return {
+  domain:pick('domain','category','product','module','source'),
+  severity:pick('severity','risk','priority','criticality'),
+  status:pick('status','state','remediationstatus'),
+  finding:pick('finding','title','name','vulnerability','issue','control'),
+  description:pick('description','details','summary','recommendation'),
+  asset:pick('asset','hostname','resource','resourceid','affectedasset'),
+  sourceFile:fileName
+ };
+}
+function parseCSV(text){
+ const lines=text.replace(/^\uFEFF/,'').split(/\r?\n/).filter(x=>x.trim());
+ if(lines.length<2)return [];
+ const parseLine=line=>{let out=[],cur='',q=false;for(let i=0;i<line.length;i++){let c=line[i];if(c==='"'&&q&&line[i+1]==='"'){cur+='"';i++}else if(c==='"')q=!q;else if(c===','&&!q){out.push(cur.trim());cur=''}else cur+=c}out.push(cur.trim());return out};
+ const heads=parseLine(lines[0]);return lines.slice(1).map(line=>{const vals=parseLine(line),o={};heads.forEach((h,i)=>o[h]=vals[i]||'');return o}).filter(o=>Object.values(o).some(v=>String(v).trim()));
+}
+async function importReports(files){
+ let added=0,errors=[];
+ for(const file of files){
+  try{
+   const text=await file.text();let rows=[];
+   if(file.name.toLowerCase().endsWith('.json')){
+    const obj=JSON.parse(text);rows=Array.isArray(obj)?obj:(Array.isArray(obj.findings)?obj.findings:Array.isArray(obj.results)?obj.results:Array.isArray(obj.items)?obj.items:[]);
+   }else if(file.name.toLowerCase().endsWith('.csv')) rows=parseCSV(text);
+   else {errors.push(file.name+': TXT is not auto-scored; use CSV/JSON.');continue}
+   if(!rows.length){errors.push(file.name+': no row-based findings detected.');continue}
+   const norm=rows.map(r=>normalizeFinding(r,file.name)).filter(f=>f.finding||f.description||f.asset||f.domain);
+   if(!norm.length){errors.push(file.name+': no recognized finding fields.');continue}
+   importedFindings=importedFindings.concat(norm);
+   importedFiles.push({name:file.name,rows:norm.length});
+   added+=norm.length;
+  }catch(e){errors.push(file.name+': unable to parse file.')}
+ }
+ try{sessionStorage.setItem('criq_imported_findings_v05',JSON.stringify(importedFindings));sessionStorage.setItem('criq_imported_files_v05',JSON.stringify(importedFiles))}catch(e){}
+ renderPosture();
+ $('uploadStatus').textContent=added?`Imported ${added} finding row(s). ${errors.join(' ')}`:(errors.join(' ')||'No findings imported.');
+ toast(added?`Imported ${added} structured finding(s)`:'No findings imported; check file format.');
+}
+function loadForm(s){Object.keys(s).forEach(k=>{let el=$(k);if(!el)return;if(el.type==='checkbox')el.checked=!!s[k];else el.value=s[k]})}
+function toast(msg){$('toast').textContent=msg;$('toast').classList.add('show');setTimeout(()=>$('toast').classList.remove('show'),2700)}
+function go(view){currentView=view;document.querySelectorAll('.view').forEach(x=>x.classList.toggle('active',x.id==='view-'+view));document.querySelectorAll('.nav button[data-view]').forEach(x=>x.classList.toggle('active',x.dataset.view===view));let names={dashboard:'Overview',assessment:'Company assessment',posture:'Security posture & data',analysis:'Risk quantification',reports:'Reports',history:'Assessment history',integration:'Tech9 IQ integration',methodology:'Methodology & limits'};$('crumb').textContent=names[view]||view;if(view==='posture'||view==='dashboard')renderPosture();window.scrollTo(0,0)}
+document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.view)));document.querySelectorAll('[data-goto]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.goto)));$('mobileMenu').addEventListener('click',()=>{let opts=['dashboard','assessment','posture','analysis','reports','history','integration','methodology'];let n=opts[(opts.indexOf(currentView)+1)%opts.length];go(n);toast('Opened '+n+' view')});let canonicalResult=null;
+function mapCanonical(q){
+ const items=(q.scenarios||[]).map(x=>({
+   name:x.name,
+   frequency:x.bands.base.frequency_per_year,
+   impact:x.bands.base.severity_inr_crore,
+   ale:x.bands.base.annualized_loss_inr_crore,
+   likelihood:'Scenario assumption'
+ }));
+ const sums=q.summary||{};
+ const bands=sums.annualized_loss_range_inr_crore||{};
+ const severity=sums.largest_single_scenario_severity_inr_crore||{};
+ return {
+   scenarios:items,
+   ale:Number(bands.base||0),
+   aleLow:Number(bands.low||0),
+   aleHigh:Number(bands.high||0),
+   severe:Number(severity.base||0),
+   severeLow:Number(severity.low||0),
+   severeHigh:Number(severity.high||0),
+   gap:Number(sums.nominal_base_scenario_gap_inr_crore||0),
+   gapHigh:Number(sums.nominal_high_scenario_gap_inr_crore||0),
+   completeness:Number(sums.assessment_completeness_percent||0),
+   modelVersion:q.model_version,
+   methodology:q.methodology,
+   limitations:q.limitations,
+   raw:q
+ };
+}
+function apiProfile(s){
+ return {
+  company:s.company,industry:s.industry,revenue:s.revenue,employees:s.employees,
+  locations:s.locations,downtime:s.downtime,data:s.data,criticality:s.criticality,
+  cover:s.cover,deductible:s.deductible,email:s.email,cloud:s.cloud,
+  edr:s.edr,mfa:s.mfa,backup:s.backup,emailsec:s.emailsec,siem:s.siem,
+  vapt:s.vapt,drl:s.drl,ot:s.ot
+ };
+}
+async function save(){
+ state=getInputs();
+ let r;
+ let apiSaved=false;
+ try{
+   const qResp=await fetch('/api/quantify',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({profile:apiProfile(state)})});
+   if(!qResp.ok) throw new Error('Quantification API returned '+qResp.status);
+   const q=await qResp.json();
+   canonicalResult=mapCanonical(q);
+   r=render(canonicalResult);
+   apiSaved=true;
+ }catch(e){
+   canonicalResult=null;
+   r=render();
+ }
+ try{localStorage.setItem('cyberrisk_iq_profile_v03',JSON.stringify(state))}catch(e){}
+ let msg=apiSaved?'Assessment calculated by the scenario API. Saving record…':'API unavailable: displayed results use the browser fallback model.';
+ try{
+   const resp=await fetch('/api/assessments',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({
+     organization:state,results:r,quantification:r.raw||null,
+     model_version:r.modelVersion||'browser-fallback'
+   })});
+   if(resp.ok){
+     const data=await resp.json();
+     msg=(apiSaved?'API calculation complete. ':'Fallback calculation used. ')+'Assessment snapshot saved (ID '+data.id.slice(0,8)+'). Assumptions are provisional.';
+     refreshHistory();
+   }else{msg += ' Snapshot was not saved to the database.'}
+ }catch(e){msg += ' Database unavailable; no server snapshot was saved.'}
+ go('dashboard');
+ toast(msg);
+} $('runAssessment').addEventListener('click',save);$('runAssessment2').addEventListener('click',save);$('loadDemo').addEventListener('click',()=>{state={...defaults};try{importedFindings=JSON.parse(sessionStorage.getItem('criq_imported_findings_v05')||'[]');importedFiles=JSON.parse(sessionStorage.getItem('criq_imported_files_v05')||'[]')}catch(e){}
+$('clearImported').addEventListener('click',()=>{importedFindings=[];importedFiles=[];try{sessionStorage.removeItem('criq_imported_findings_v05');sessionStorage.removeItem('criq_imported_files_v05');sessionStorage.removeItem('criq_imported_findings_v06');sessionStorage.removeItem('criq_imported_files_v06')}catch(e){}renderPosture();render();toast('Imported findings cleared from this browser session')});
+loadForm(state);render();renderPosture();try{localStorage.setItem('cyberrisk_iq_profile_v02',JSON.stringify(state))}catch(e){}toast('Demo profile loaded')});$('resetDemo').addEventListener('click',()=>{state={...defaults};try{importedFindings=JSON.parse(sessionStorage.getItem('criq_imported_findings_v05')||'[]');importedFiles=JSON.parse(sessionStorage.getItem('criq_imported_files_v05')||'[]')}catch(e){}
+$('clearImported').addEventListener('click',()=>{importedFindings=[];importedFiles=[];try{sessionStorage.removeItem('criq_imported_findings_v05');sessionStorage.removeItem('criq_imported_files_v05');sessionStorage.removeItem('criq_imported_findings_v06');sessionStorage.removeItem('criq_imported_files_v06')}catch(e){}renderPosture();render();toast('Imported findings cleared from this browser session')});
+loadForm(state);render();renderPosture();try{localStorage.setItem('cyberrisk_iq_profile_v02',JSON.stringify(state))}catch(e){}go('dashboard');toast('Demo reset')});$('toReports').addEventListener('click',()=>{render();go('reports')});
+async function refreshHistory(){const body=$('historyTable');try{const resp=await fetch('/api/assessments');if(!resp.ok)throw new Error('API unavailable');const data=await resp.json();const items=data.items||[];$('historyCount').textContent=items.length+' record'+(items.length===1?'':'s');body.innerHTML=items.length?items.map(x=>`<tr><td><b>${escapeHTML(x.organization_name)}</b></td><td>${escapeHTML(x.industry)}</td><td>${escapeHTML(x.created_at||'')}</td><td>${escapeHTML(x.model_version||'')}</td><td title="${escapeHTML(x.id)}"><code>${escapeHTML((x.id||'').slice(0,8))}…</code></td></tr>`).join(''):'<tr><td colspan="5">No saved assessments yet. Complete an assessment and click Save & calculate.</td></tr>'}catch(e){$('historyCount').textContent='API offline';body.innerHTML='<tr><td colspan="5">Local API is not connected. Start the development server and refresh.</td></tr>'}}
+function escapeHTML(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+$('refreshHistory').addEventListener('click',refreshHistory);document.querySelectorAll('[data-view="history"]').forEach(b=>b.addEventListener('click',refreshHistory));$('printReport').addEventListener('click',()=>window.print());$('exportAnalysis').addEventListener('click',()=>{let r=calc(state);let rows=[['Scenario','Illustrative frequency','Impact estimate INR crore','Annualized loss INR crore'],...r.scenarios.map(x=>[x.name,x.frequency,x.impact,x.ale])];let csv=rows.map(row=>row.map(v=>'"'+String(v).replaceAll('"','""')+'"').join(',')).join('\n');let blob=new Blob([csv],{type:'text/csv;charset=utf-8;'});let url=URL.createObjectURL(blob);let a=document.createElement('a');a.href=url;a.download='cyberrisk-iq-scenario-summary.csv';a.click();URL.revokeObjectURL(url);toast('Scenario CSV exported')});try{importedFindings=JSON.parse(sessionStorage.getItem('criq_imported_findings_v05')||'[]');importedFiles=JSON.parse(sessionStorage.getItem('criq_imported_files_v05')||'[]')}catch(e){}
+$('clearImported').addEventListener('click',()=>{importedFindings=[];importedFiles=[];try{sessionStorage.removeItem('criq_imported_findings_v05');sessionStorage.removeItem('criq_imported_files_v05');sessionStorage.removeItem('criq_imported_findings_v06');sessionStorage.removeItem('criq_imported_files_v06')}catch(e){}renderPosture();render();toast('Imported findings cleared from this browser session')});
+loadForm(state);render();renderPosture();
+fetch('/api/health').then(r=>r.ok?r.json():null).then(async d=>{
+ if(d&&d.status==='ok'){
+   const el=document.getElementById('apiStatus');if(el)el.textContent='Development API connected · '+d.version;
+   try{
+     const q=await fetch('/api/quantify',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({profile:apiProfile(state)})});
+     if(q.ok){canonicalResult=mapCanonical(await q.json());render(canonicalResult);}
+   }catch(e){}
+ }else{
+   const el=document.getElementById('apiStatus');if(el)el.textContent='API offline · browser fallback model';
+ }
+}).catch(()=>{const el=document.getElementById('apiStatus');if(el)el.textContent='API offline · browser fallback model';});
+
+// CyberRisk IQ v0.6 — normalized evidence ingestion layer.
+// Canonical fields: finding_id, finding, domain, severity, status, asset,
+// description, source_file, imported_at, validation_flags.
+function normalizeSeverityV06(v) {
+ const x=String(v||'').trim().toLowerCase();
+ if(/critical|urgent|sev.?1|p1|very high/.test(x)) return 'Critical';
+ if(/high|major|sev.?2|p2/.test(x)) return 'High';
+ if(/medium|moderate|sev.?3|p3|med/.test(x)) return 'Medium';
+ if(/low|minor|sev.?4|p4/.test(x)) return 'Low';
+ if(/info|informational|none/.test(x)) return 'Informational';
+ return x ? 'Unmapped' : 'Unknown';
+}
+function normalizeStatusV06(v) {
+ const x=String(v||'').trim().toLowerCase();
+ if(/closed|resolved|fixed|remediated|completed/.test(x)) return 'Resolved';
+ if(/accepted|risk accepted|exception/.test(x)) return 'Risk accepted';
+ if(/false positive|not applicable|ignored/.test(x)) return 'Not applicable';
+ if(/progress|working|in progress|remediat/.test(x)) return 'In progress';
+ if(/open|new|active|unresolved|pending/.test(x)) return 'Open';
+ return x ? 'Unmapped' : 'Unknown';
+}
+function stableFindingKey(f) {
+ return [f.finding,f.domain,f.severity,f.status,f.asset,f.description]
+  .map(x=>String(x||'').trim().toLowerCase().replace(/\s+/g,' ')).join('|');
+}
+function normalizeFindingV06(row,fileName) {
+ const pick=(...keys)=> {
+  const normalized=Object.keys(row||{}).reduce((acc,k)=>{acc[k.toLowerCase().replace(/[^a-z0-9]/g,'')]=row[k];return acc;},{});
+  for(const k of keys){const key=k.toLowerCase().replace(/[^a-z0-9]/g,'');if(normalized[key]!==undefined && normalized[key]!==null)return String(normalized[key]).trim();}
+  return '';
+ };
+ const finding=pick('finding','title','name','vulnerability','issue','control','check','rule name','alert name');
+ const domain=pick('domain','category','product','module','security domain','control family');
+ const severityRaw=pick('severity','risk','priority','criticality','risk level','alert severity');
+ const statusRaw=pick('status','state','remediation status','resolution','workflow status');
+ const asset=pick('asset','hostname','resource','resource id','affected asset','host','device','url','ip address');
+ const description=pick('description','details','summary','recommendation','evidence','finding description');
+ const flags=[];
+ if(!finding) flags.push('Missing finding title');
+ if(!severityRaw) flags.push('Severity not provided');
+ if(!statusRaw) flags.push('Status not provided');
+ if(!asset) flags.push('Asset not provided');
+ return {
+  finding_id:'',
+  finding:finding || description || '(untitled finding)',
+  domain:domain || 'Unmapped',
+  severity:normalizeSeverityV06(severityRaw),
+  severity_source:severityRaw || '',
+  status:normalizeStatusV06(statusRaw),
+  status_source:statusRaw || '',
+  asset:asset || '',
+  description:description || '',
+  source_file:fileName,
+  imported_at:new Date().toISOString(),
+  validation_flags:flags
+ };
+}
+function downloadV06(name, content, type) {
+ const blob=new Blob([content],{type:type||'text/plain;charset=utf-8'});
+ const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=name;a.click();URL.revokeObjectURL(url);
+}
+function renderFindingsV06(validation) {
+ const body=$('normalizedFindingsTable');
+ if(body) body.innerHTML=importedFindings.length ? importedFindings.slice(0,500).map(f=>`<tr><td><b>${escapeHTML(f.finding)}</b><span class="muted">${escapeHTML((f.validation_flags||[]).join('; ')||'No basic validation flags')}</span></td><td>${escapeHTML(f.domain||'Unmapped')}</td><td>${escapeHTML(f.severity||'Unknown')}</td><td>${escapeHTML(f.status||'Unknown')}</td><td>${escapeHTML(f.asset||'—')}</td><td>${escapeHTML(f.source_file||'—')}</td></tr>`).join('') : '<tr><td colspan="6">Import a CSV or JSON report to populate the register.</td></tr>';
+ const el=$('importValidation');
+ if(el){
+  const flags=importedFindings.reduce((n,f)=>n+(f.validation_flags||[]).length,0);
+  const unresolved=importedFindings.filter(f=>f.severity==='Unmapped'||f.severity==='Unknown'||f.domain==='Unmapped').length;
+  const resolved=importedFindings.filter(f=>f.status==='Resolved').length;
+  el.textContent=validation || (importedFindings.length ? `Validation: ${importedFindings.length} unique finding(s); ${resolved} resolved; ${unresolved} need severity/domain mapping review; ${flags} field-level validation flag(s).` : 'Validation report will appear after import.');
+ }
+}
+async function importReportsV06(files) {
+ let accepted=0,duplicates=0,rejected=0,errors=[];
+ const seen=new Set(importedFindings.map(stableFindingKey));
+ for(const file of files) {
+  try {
+   const txt=await file.text();let rows=[];
+   if(file.name.toLowerCase().endsWith('.json')) {
+    const obj=JSON.parse(txt);
+    rows=Array.isArray(obj)?obj:(Array.isArray(obj.findings)?obj.findings:Array.isArray(obj.results)?obj.results:Array.isArray(obj.items)?obj.items:[]);
+   } else if(file.name.toLowerCase().endsWith('.csv')) rows=parseCSV(txt);
+   else {errors.push(`${file.name}: unsupported file type; use CSV or JSON.`);rejected++;continue;}
+   if(!rows.length){errors.push(`${file.name}: no structured rows found.`);rejected++;continue;}
+   let fileAccepted=0;
+   for(const row of rows) {
+    if(!row || typeof row!=='object' || Array.isArray(row)){rejected++;continue;}
+    const f=normalizeFindingV06(row,file.name);
+    if(f.finding==='(untitled finding)' && !f.asset && !f.description && f.domain==='Unmapped'){rejected++;continue;}
+    const key=stableFindingKey(f);
+    if(seen.has(key)){duplicates++;continue;}
+    seen.add(key);f.finding_id='criq-'+(seen.size.toString(36))+'-'+Math.abs(hashStringV06(key)).toString(36);
+    importedFindings.push(f);accepted++;fileAccepted++;
+   }
+   if(fileAccepted) importedFiles.push({name:file.name,rows:fileAccepted});
+  } catch(e) {errors.push(`${file.name}: could not parse this file; check its format.`);rejected++;}
+ }
+ try {sessionStorage.setItem('criq_imported_findings_v06',JSON.stringify(importedFindings));sessionStorage.setItem('criq_imported_files_v06',JSON.stringify(importedFiles));} catch(e) {}
+ // Migrate prior session state only after the new canonical format is saved.
+ renderPosture();renderFindingsV06();
+ const msg=`Import complete: ${accepted} added, ${duplicates} duplicate(s) skipped, ${rejected} row/file(s) rejected.`+(errors.length?' '+errors.join(' '):'');
+ if($('uploadStatus')) $('uploadStatus').textContent=msg;
+ if($('importValidation')) $('importValidation').textContent=msg+` Total unique findings in session: ${importedFindings.length}.`;
+ toast(accepted?`Imported ${accepted} normalized finding(s)`:'No new findings imported; review the validation report.');
+}
+
+function importReports(files){ return importReportsV06(files); }
+// Upgrade any findings that were already present in the v0.5 browser session.
+try {
+ const prior=JSON.parse(sessionStorage.getItem('criq_imported_findings_v05')||'[]');
+ if(!importedFindings.length && prior.length) importedFindings=prior.map(f=>normalizeFindingV06(f,f.sourceFile||'previous session'));
+ const priorFiles=JSON.parse(sessionStorage.getItem('criq_imported_files_v05')||'[]');
+ if(!importedFiles.length && priorFiles.length) importedFiles=priorFiles;
+ sessionStorage.setItem('criq_imported_findings_v06',JSON.stringify(importedFindings));
+ sessionStorage.setItem('criq_imported_files_v06',JSON.stringify(importedFiles));
+} catch(e) {}
+$('reportUpload').addEventListener('change',e=>{if(e.target.files&&e.target.files.length)importReportsV06(Array.from(e.target.files));e.target.value=''});
+
+function hashStringV06(s){let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619);}return h|0;}
+$('exportFindingsCsv').addEventListener('click',()=>{
+ const cols=['finding_id','finding','domain','severity','severity_source','status','status_source','asset','description','source_file','imported_at','validation_flags'];
+ const rows=[cols,...importedFindings.map(f=>cols.map(k=>Array.isArray(f[k])?f[k].join('; '):(f[k]??'')))];
+ const csv=rows.map(r=>r.map(v=>'"'+String(v).replaceAll('"','""')+'"').join(',')).join('\r\n');
+ downloadV06('cyberrisk-iq-normalized-findings.csv',csv,'text/csv;charset=utf-8;');toast('Normalized findings CSV exported');
+});
+$('exportFindingsJson').addEventListener('click',()=>{downloadV06('cyberrisk-iq-normalized-findings.json',JSON.stringify({schema_version:'0.6',exported_at:new Date().toISOString(),findings:importedFindings},null,2),'application/json');toast('Normalized findings JSON exported')});
+
+</script>
+<style>@media print{body{background:#fff}.sidebar,.topbar,.actions,.nav,.notice{display:none!important}.app{display:block}.content{padding:0;max-width:none}.view{display:none!important}#view-reports{display:block!important}.card{box-shadow:none;break-inside:avoid}.view#view-reports .card{border:0}.smallprint{font-size:9px} }</style>
+</body></html>
